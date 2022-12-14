@@ -1,0 +1,27 @@
+stack technology : 
+- backend:
+	- mysql
+	- express.js
+	- knex
+	- rabbitmq
+	- postman (QA testing)
+- frontend :
+	- vue.js
+	- bootstrap
+
+cara menjalankan aplikasi backend API
+1. upload terlebih dahulu struktur database dengan nama file simpledatabase2.sql
+2. pastikan konfigurasi database yang ada file berikut ini sama dengan yang ada di dalam database:
+	- databaseconfig.js
+	- knexfile.js
+	- knexfile.ts
+3. pastikan konfigurasi rabbitmq (terutama fitur "queue") yang berada dalam file queue.js sesuai dengan yang tersimpan dalam server
+4. jalankan program menggunakan perintah apabila ingin melakukan seeding (apabila ingin melakukan seeding. data yang ada di dalam file sql sudah tersimpan data dummy): knex seed:run --specific=dummydata.js
+5. jalankan program menggunakan perintah : node index.js
+
+cara menjalankan aplikasi frontend Vue.js
+1. jalankan program menggunakan perintah : npm run serve
+
+cara menjalankan aplikasi IT Logical Programming Test
+1. pastikan python 3 sudah terinstall
+2. jalankan program melalui cmd
